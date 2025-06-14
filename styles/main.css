@@ -1,0 +1,153 @@
+@font-face {
+  font-family: 'SF-pro';
+  src: url('/font/SFPRODISPLAYREGULAR.OTF');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+
+
+body {
+  background-image: url('/assets/fondo.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'SF-pro';
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+.item__black {
+  background-color: black;
+  width: 60%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.header__item {
+  color: white;
+  padding-top: 7px;
+  font-size: 0.8rem;
+}
+
+
+.toggle {
+  display: none;
+}
+
+.apps{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows: 80px;
+  grid-gap: 25px;
+  margin: 25px 20px;
+  position: relative;
+}
+
+.apps__img{
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.apps__content{
+  text-align: center;
+  color: white;
+}
+
+.iframe {
+  display: none;
+  position: fixed;
+  margin-top: 25px;        
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100vw;           
+  height: 100vh;            
+  background-color: white;  
+}
+
+.iframe iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.widget{
+  grid-column: 1 / 3;
+  grid-row: 2 / 4 ;
+}
+
+.widget__img{
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.toggle:checked+.iframe {
+  display: block;
+}
+
+.lowernav{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+
+.lowernav__points{
+  display: flex;
+  justify-content: center;
+}
+
+.radio__input[type="radio"] {
+  display: none;
+}
+
+.radio__gray span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffffff; 
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.radio__input[type="radio"]:checked + span {
+  background-color: #888; 
+}
+
+.lowernav__apps{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 30px;
+  background-color: rgba(126, 114, 141, 0.3);
+  backdrop-filter: blur(20px);
+  padding: 15px 10px;
+  margin: 0 5px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px ;
+}
+
+.lowernav__apps img{
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+
+
+
