@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+.contenedor {
+  display: flex;
+  width: 100%;
+}
+
+.barra-lateral {
+  width: 250px;
+  background-color: #f3f3f3;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-right: 1px solid #ccc;
+}
+
+.barra-lateral h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.barra-lateral ul {
+  list-style: none;
+  padding: 0;
+}
+
+.barra-lateral li {
+  margin-bottom: 0.5rem;
+}
+
+.barra-lateral a {
+  display: block;
+  background-color: white;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.barra-lateral a:hover {
+  background-color: #eaeaea;
+}
+
+.mensaje {
+  font-size: 0.85rem;
+  margin-top: 2rem;
+  color: #777;
+}
+
+.editor {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  background-color: #fffefc;
+}
+
+.editor article {
+  margin-bottom: 2rem;
+}
+
+.editor h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}

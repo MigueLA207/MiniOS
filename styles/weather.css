@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(to top, #87cefa, #fefefe);
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.clima-app {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.clima-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.fecha {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.clima-principal {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.clima-principal img {
+  width: 100px;
+}
+
+.clima-principal h2 {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+}
+
+.clima-horas h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.clima-horas ul {
+  list-style: none;
+  padding: 0;
+}
+
+.clima-horas li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.clima-horas img {
+  width: 30px;
+}
+
+.nota {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: #555;
+  text-align: center;
+}
