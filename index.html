@@ -164,6 +164,14 @@
     </section>
 
   </main>
+  <script>
+  window.addEventListener('DOMContentLoaded', function() {
+    if (!sessionStorage.getItem('alertaMostrada')) {
+      alert('Pagina solo para celuco, cambia la resolución');
+      sessionStorage.setItem('alertaMostrada', 'true');
+    }
+  });
+</script>
 </body>
 
 </html>
