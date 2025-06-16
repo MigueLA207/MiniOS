@@ -13,7 +13,7 @@
 
 
 body {
-  background-image: url('/assets/fondo.webp');
+  background-image: url('../assets/fondo.webp');
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'SF-pro';
